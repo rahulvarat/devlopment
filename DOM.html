@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                text-align:center;
+                background-color: lightblue;
+                margin-top: 100px;
+              
+               
+            }
+            h1{
+                color: darkblue;
+            }
+            #demo{
+                font-size:25px;
+                color:red;
+                margin-top:20px
+            }
+            button{
+                padding:10px 20px;
+                font-size:18px;
+                background-color: brown;
+            }
+        </style>
+        <script>
+            function changetext(){
+                document.getElementById("demo").innerHTML="content change dynamically using dom";
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>javascript DOM example</h1>
+         <button onclick="changetext()">
+            click here
+
+        </button>
+        <div id="demo">
+            welcome student
+        </div>
+       
+
+    </body>
+</html>

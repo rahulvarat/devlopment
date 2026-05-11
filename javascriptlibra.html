@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library signup form</title>
+
+        <style>
+            .form{
+                text-align: center;
+                width: 400px;
+                background-color: rgb(82, 126, 164);
+                padding: 50px;
+                margin:200px auto;
+                border-radius: 10px;
+                border-color: black;
+
+            }
+            button{
+                color: azure;
+                background-color:darkblue
+                
+            }
+            body{
+                
+                background-color:whitesmoke;
+                margin:20px;
+            }
+            h2{
+             
+                text-align:center;
+                color:darkblue;
+            }
+
+
+        </style>
+        <script>
+            function validateform(){
+                var name=document.getElementById("name").value;
+                var email=document.getElementById("email").value;
+                var mobile=document.getElementById("mobile").value;
+                if(name==""||email==""||mobile==""){
+                    alert("enter required field");
+                    return false;
+                }
+                if(email.indexOf("@")==-1||email.indexOf(".")==-1){
+                    alert("enetr correct email");
+                    return false;
+                }
+                if(mobile.length!=10){
+                    alert("enter valid mobile");
+                    return false;
+
+                }
+                alert("form succesfuly submited");
+                return true;
+            }
+        </script>
+
+    </head>
+    <body>
+       
+        <div class="form" >
+             <h2>library signup form</h2>
+            <form onsubmit="return validateform()">
+                <P>
+                   <b>Name:</b>
+                    <input type="text" id="name" placeholder="enter the name">
+
+                </P>
+                 <P>
+                    <b>email:</b>
+                    <input type="text" id="email" placeholder="enter the email">
+
+                </P>
+                 <P>
+                    <b>Mobile:</b>
+                    <input type="text" id="mobile" placeholder="enter the mobile Number">
+
+                </P>
+                <button type="submit">signup</button>
+            </form>
+
+        </div>
+
+    </body>
+</html>

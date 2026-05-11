@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d9f2ff;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        form {
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid gray;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            padding: 6px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: darkblue;
+            color: white;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Survey Form</h1>
+
+    <form>
+
+        <!-- Name -->
+        <p>
+            <b>Name:</b><br>
+            <input type="text" placeholder="Enter your name">
+        </p>
+
+        <!-- Email -->
+        <p>
+            <b>Email:</b><br>
+            <input type="email" placeholder="Enter your email">
+        </p>
+
+        <!-- Gender -->
+        <p>
+            <b>Gender:</b><br>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </p>
+
+        <!-- Course -->
+        <p>
+            <b>Select Course:</b><br>
+            <select>
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>BTECH</option>
+                <option>MTECH</option>
+            </select>
+        </p>
+
+        <!-- Skills -->
+        <p>
+            <b>Skills:</b><br>
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> JavaScript
+            <input type="checkbox"> Python
+        </p>
+
+        <!-- Feedback -->
+        <p>
+            <b>Feedback:</b><br>
+            <textarea rows="4" placeholder="Write your feedback"></textarea>
+        </p>
+
+        <!-- Buttons -->
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+
+    </form>
+
+</body>
+</html>
